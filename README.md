@@ -20,7 +20,7 @@
 
 This repository demonstrates sample issues in Ruby code raised by DeepSource.
 
-[![DeepSource](https://deepsource.io/gh/deepsourcelabs/demo-ruby.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/deepsourcelabs/demo-ruby/?ref=repository-badge)
+[![DeepSource](https://deepsource.io/gh/deepsourcelabs/demo-ruby.svg/?label=active+issues&show_trend=true&token=GUiSpAVeA3v_yYb35jVt0I1V)](https://deepsource.io/gh/deepsourcelabs/demo-ruby/?ref=repository-badge)
 
 ### Report
 

@@ -22,6 +22,11 @@ begin
 rescue
 end
 
+# Raises "redundant `else`-clause detected"
+if bar
+else
+end
+
 # Raises "unused method arguments detected"
 def some_method(bar)
   puts 'Hello'
@@ -37,5 +42,7 @@ end
 OpenSSL::Cipher::AES.new(128, :GCM)
 
 # Raises "put empty method definitions on a single line"
+# Also raises "multiple methods with same name in the same scope" as we have a
+# method with same name above
 def some_method
 end
