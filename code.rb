@@ -38,6 +38,16 @@ def some_method
   do_something
 end
 
+# Raises "top level return with argument detected"
+return 1
+
+# Raises "duplicate elsif block detected"
+if x == 1
+  do_something
+elsif x == 1
+  do_something_else
+end
+
 # Raises "Deprecated way of initializing OpenSSL::Cipher and OpenSSL::Digest"
 OpenSSL::Cipher::AES.new(128, :GCM)
 
