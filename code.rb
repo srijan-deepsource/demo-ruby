@@ -56,3 +56,20 @@ OpenSSL::Cipher::AES.new(128, :GCM)
 # method with same name above
 def some_method
 end
+
+# Raises "Invalid annotation keyword format detected"
+def foo
+  # TODO Replace this with bar
+  do_something
+end
+
+# Raises "Use `Range#cover?` instead of `Range#include?`"
+(1..9).include?(5)
+
+my_hash = {}
+# Raises "Hash merging can be replaced by hash key assignment"
+my_hash.merge!('key': value)
+
+
+# Raises "Use `size` instead of `count`"
+[1, 2, 3].count
