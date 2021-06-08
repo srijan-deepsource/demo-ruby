@@ -77,4 +77,5 @@ my_hash.merge!('key': value)
 [1, 2, 3].count
 
 # page exists, link!
+fp = open(page_path)
 link_to 'Click here', url, target: '_blank'
