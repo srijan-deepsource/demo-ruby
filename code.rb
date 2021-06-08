@@ -56,6 +56,13 @@ OpenSSL::Cipher::AES.new(128, :GCM)
 # method with same name above
 def some_method
 end
+  
+if x == 1
+  do_something
+elsif x == 1
+  do_something_else
+end
+  
 
 # Raises "Invalid annotation keyword format detected"
 def foo
