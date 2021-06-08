@@ -59,6 +59,7 @@ def some_method
 end
 
 # Raises "Invalid annotation keyword format detected"
+
 def foo
   # TODO Replace this with bar
   do_something
