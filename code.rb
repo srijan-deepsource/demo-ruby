@@ -83,11 +83,24 @@ end
 class TrackUsage
   EXPIRED_AT = 1.week.since
 end
+  
+if blacklisted.include? email
+  user = User.find_by_email(email)
+  block_user(user)
+else
+  user = User.find_by_first_name_and_last_name(first_name, last_name)
+end
 
 if File.exist?(filepath)
   # Clean up!
   File.delete(filepath)
 end
 
-# Maintain an enum of the status
-enum status: [:active, :archived, :cancelled, :backlog]
+
+if blacklisted.include? email
+  user = User.where(email: email).take
+  block_user(user)
+else
+  user = User.where(first_name: first_name, last_name: last_name).take
+end
+
