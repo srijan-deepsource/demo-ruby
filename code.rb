@@ -87,3 +87,4 @@ end
 if File.exists?(filepath)
   # Clean up!
   File.delete(filepath)
+end
