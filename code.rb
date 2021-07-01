@@ -83,3 +83,7 @@ end
 class TrackUsage
   EXPIRED_AT = 1.week.since
 end
+
+if File.exists?(filepath)
+  # Clean up!
+  File.delete(filepath)
