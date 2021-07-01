@@ -84,7 +84,9 @@ class TrackUsage
   EXPIRED_AT = 1.week.since
 end
 
-if File.exists?(filepath)
+if File.exist?(filepath)
   # Clean up!
   File.delete(filepath)
 end
+
+joined_hases = %wmy_hash * ', '
