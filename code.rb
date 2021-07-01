@@ -79,3 +79,7 @@ def another(&func)
   func.call 1, 2, 3
 end
 
+  
+class TrackUsage
+  EXPIRED_AT = 1.week.since
+end
