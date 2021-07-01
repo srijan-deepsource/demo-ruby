@@ -89,4 +89,5 @@ if File.exist?(filepath)
   File.delete(filepath)
 end
 
-joined_hases = %w[#v43u9vn93 h3b39209u7&&^jfk nvn&^&*YQOIJQI@(*] * '-'
+# Maintain an enum of the status
+enum status: [:active, :archived, :cancelled, :backlog]
