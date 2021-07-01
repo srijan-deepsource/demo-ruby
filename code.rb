@@ -89,4 +89,4 @@ if File.exist?(filepath)
   File.delete(filepath)
 end
 
-joined_hases = %w my_hash * ', '
+joined_hases = %w[#v43u9vn93 h3b39209u7&&^jfk nvn&^&*YQOIJQI@(*] * '-'
